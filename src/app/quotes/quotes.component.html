@@ -1,0 +1,12 @@
+<div >
+    <h1 style='text-align: center'>My Quotes</h1>
+    <hr>
+    <p style="padding-left: 70px">My quote of the day {{ quote }}</p>
+    <ul>
+      <li *ngFor='let quote of quotes' class="card" style="width: 18rem"><br>
+        {{quote.name}}
+      </li>
+  </ul>
+    
+  </div>
+  
