@@ -1,14 +1,14 @@
 <p>
-    {{quote.description}}</p>
-    <p> {{quote.author}}</p> 
-    <p> {{quote.completeDate|date}}</p> 
+  {{quote.description}}</p>
+<p> {{quote.author}}</p>
+<p> {{quote.completeDate|date}}</p>
 
 <div>
-<!-- <span class="span2"><i class="fa fa-thumbs-up" (click)="upVotes()"></i></span>
+  <!-- <span class="span2"><i class="fa fa-thumbs-up" (click)="upVotes()"></i></span>
 {{quote.upvotes}} -->
-<a (click)="likeButtonClick()"><i class="fa fa-thumbs-up" ></i></a> {{upVotes}}
-<a (click)="dislikeButtonClick()"><i class="fa fa-thumbs-down"></i></a>{{downVotes}}
-<!-- <span class="span"><i class="fa fa-thumbs-down"(click)="downotes()" ></i></span>
+  <a (click)="likeButtonClick()"><i class="fa fa-thumbs-up"></i></a> {{upVotes}}
+  <a (click)="dislikeButtonClick()"><i class="fa fa-thumbs-down"></i></a>{{downVotes}}
+  <!-- <span class="span"><i class="fa fa-thumbs-down"(click)="downotes()" ></i></span>
 {{quote.downvotes}} -->
 </div>
-<button (click)= 'quoteDelete(true)' style="margin-left: 30%">Delete Quote</button>
+<button (click)='quoteDelete(true)' style="margin-left: 30%">Delete Quote</button>

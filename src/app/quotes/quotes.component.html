@@ -1,25 +1,24 @@
 <div class="container-fluid">
-  <h1 style='text-align: center'class='h1'>My Quotes</h1>
+  <h1 style='text-align: center' class='h1'>My Quotes</h1>
   <hr>
   <div class="row">
     <div class="col-md-6">
-  <p style="padding-left: 100px" class="h">Quote of the day {{ quote }}</p>
+      <p style="padding-left: 100px" class="h">Quotes {{ quote }}</p>
 
-    <div *ngFor='let quote of quotes;let i =index' class="card" style="width:400px"><br>
-  <ul>
-      <li>{{quote.name}}
-      <!-- {{quote.completeDate|date|uppercase}} -->
-    
-      <!-- <button (click)='toggleDetails(i)'>Toggle Details</button> -->
-      <app-quote-details  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
-      </li>
-      </ul>
+      <div *ngFor='let quote of quotes;let i =index' class="card" style="width:400px"><br>
+        <ul>
+          <li>{{quote.name}}
+            <!-- {{quote.completeDate|date|uppercase}} -->
+
+            <!-- <button (click)='toggleDetails(i)'>Toggle Details</button> -->
+            <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
     <div class="col-md-6">
       <app-quote-form></app-quote-form>
-      </div>
+    </div>
 
 
-</div>
-
+  </div>

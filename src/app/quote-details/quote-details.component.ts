@@ -17,14 +17,14 @@ export class QuoteDetailsComponent implements OnInit {
 
   upVotes: number = 0;
   downVotes: number = 0;
-  
-  likeButtonClick(){
-     this.upVotes ++;
-   }
 
-   dislikeButtonClick(){
-     this.downVotes ++;
-   }
+  likeButtonClick() {
+    this.upVotes++;
+  }
+
+  dislikeButtonClick() {
+    this.downVotes++;
+  }
   // constructor() {
   //   this.upvotes = 0;
   //   this.downvotes = 0;
