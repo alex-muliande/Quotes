@@ -11,10 +11,13 @@ export class QuotesComponent implements OnInit {
     {id:1,name: 'Life Quote',description:'Life is full of life when you join the troops'},
     {id:2,name: 'Social Quote',description: 'Life is full of life when you join the troops'}
   ];
-
-  completeQuote(isComplete, index){
+  deleteGoal(isComplete, index){
     if (isComplete) {
-      this.quotes.splice(index,1);
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
     }
   }
   // toggleDetails(index){

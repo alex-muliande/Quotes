@@ -1,11 +1,13 @@
-<div>
+<div class="container">
   <h1 style='text-align: center'>My Quotes</h1>
   <hr>
   <p style="padding-left: 70px">My quote of the day {{ quote }}</p>
   <ul>
     <div *ngFor='let quote of quotes;let i =index' class="card" style="width:400px"><br>
-      <li> {{quote.name}}</li>
+      <li appStrikethrough>{{quote.name}}</li>
       <!-- <button (click)='toggleDetails(i)'>Toggle Details</button> -->
-      <app-quote-details [quote]='quote' (isComplete) = 'completeQuote ($event,i)'></app-quote-details>
+      <app-quote-details [quote]='quote' (isComplete) = 'deleteQuote ($event,i)'></app-quote-details>
     </div>
   </ul>
+</div>
+
