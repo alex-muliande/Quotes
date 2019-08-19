@@ -4,8 +4,8 @@
 
 <button (click)= 'quoteDelete(true)' style="margin-left: 30%">Delete Quote</button>
 <div>
-<span class="span2"><i class="fa fa-thumbs-up"></i></span>
+<span class="span2"><i class="fa fa-thumbs-up" (click)="quote.upvotes=quote.upvotes+1"></i></span>
 {{quote.upvotes}}
-<span class="span"><i class="fa fa-thumbs-down"></i></span>
+<span class="span"><i class="fa fa-thumbs-down"(click)="quote.downvotes=quote.downvotes+1"></i></span>
 {{quote.downvotes}}
 </div>
