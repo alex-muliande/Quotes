@@ -3,6 +3,7 @@ body{
     font-family: 'Patrick Hand', cursive;
     background-image: url('https://cdn.pixabay.com/photo/2015/10/14/12/50/shell-987602_960_720.jpg');
     background-size: cover;
+    color: wheat;
 }
 .card{
     margin-bottom: 2%;
@@ -18,4 +19,10 @@ body{
 }
 .span2{
     color: rgb(21, 21, 182);
+}
+.card,.form-control{
+    background-color:rgba(25,37,43,0.7);
+}
+.form-control{
+    color: wheat;
 }
