@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
 ## BDD 
-###Functions of the app
+### Functions of the app
 The app should be able to allow the user to read through the Quotes that are provided by the app.As a sample .
 It has also provided a form to help users Input the Quotes of there desires.
 The App has been made in away that its easy to interact with its users.When you add a quote it comes with Authors name,Quote itself and Dates. 
