@@ -6,11 +6,14 @@
   <p style="padding-left: 100px" class="h">Quote of the day {{ quote }}</p>
 
     <div *ngFor='let quote of quotes;let i =index' class="card" style="width:400px"><br>
-      <h2 appStrikethrough>{{quote.name}}</h2>
-     
+  <ul>
+      <li>{{quote.name}}
+      <!-- {{quote.completeDate|date|uppercase}} -->
+    
       <!-- <button (click)='toggleDetails(i)'>Toggle Details</button> -->
       <app-quote-details  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
-      
+      </li>
+      </ul>
     </div>
   </div>
     <div class="col-md-6">
