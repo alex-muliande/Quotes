@@ -2,3 +2,7 @@
     {{quote.description}}
 </p>
 <button (click)= 'quoteComplete(true)' style="margin-left: 30%">Delete Quote</button>
+<span><i class="fa fa-thumbs-up" (click)="upVote()"></i></span>
+{{upvotes}}
+<span><i class="fa fa-thumbs-down" (click)="downVote()"></i></span>
+{{downvotes}}

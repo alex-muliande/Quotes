@@ -8,8 +8,8 @@ import { Quote } from '../quote';
 })
 export class QuotesComponent implements OnInit {
   quotes: Quote[] = [
-    {id:1,name: 'Life Quote',description:'Life is full of life when you join the troops'},
-    {id:2,name: 'Social Quote',description: 'Life is full of life when you join the troops'}
+    {id:1,name: 'Life Quote',description:'Keep looking up thats the secret of life-Hancel Asher'},
+    {id:2,name: 'Social Quote',description: 'Those who realize their folly are not true fools -Victor Manuel'}
   ];
   deleteGoal(isComplete, index){
     if (isComplete) {
