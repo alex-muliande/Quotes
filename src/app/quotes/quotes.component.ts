@@ -21,14 +21,21 @@ export class QuotesComponent implements OnInit {
       }
     }
   }
+    addNewQuote(Quote){
+      let quoteLength = this.quotes.length;
+      Quote.id = quoteLength+1;
+      Quote.completeDate = new Date(Quote.completeDate);
+      this.quotes.push(Quote);
+    }
 
+    constructor() { }
 
-  constructor() { }
-
-  ngOnInit() {
+    ngOnInit() {
+    }
   }
 
-}
+
+
 
 
 
