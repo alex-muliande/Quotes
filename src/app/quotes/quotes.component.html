@@ -8,8 +8,8 @@
       <div *ngFor='let quote of quotes;let i =index' class="card" style="width:400px"><br>
         <ul>
           <li>{{quote.name}}
-            <br>     
-              <button (click)='toggleDetails(i)'>Show Details</button>
+            <br>  <br>   
+              <button class="btn btn-primary" style="color:wheat" (click)='toggleDetails(i)'>Show Details</button>
               <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)' *ngIf='quote.showDescription '></app-quote-details>
              
           </li>
