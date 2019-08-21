@@ -9,8 +9,8 @@ import { Quote } from '../quote';
 
 export class QuotesComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, 'Life Quote', 'Keep looking up thats the secret of life', 'Hancel Asher', new Date(2019, 8, 19)),
-    new Quote(2, 'Social Quote', 'Those who realize their folly are not true fools', 'Victor Manuel', new Date(2019, 8, 19))
+    new Quote(1, 'Life Quote', 'Keep looking up thats the secret of life', 'Hancel Asher','Alex muliande', new Date(2019, 1, 1)),
+    new Quote(2, 'Social Quote', 'Those who realize their folly are not true fools', 'Victor Manuel','Tony wein', new Date(2019, 4, 19))
   ];
 
   deleteQuote(isComplete, index) {

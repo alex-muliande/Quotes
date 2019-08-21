@@ -1,7 +1,8 @@
 <p>
   {{quote.description}}</p>
-<p> {{quote.author}}</p>
-<p> {{quote.completeDate|date}}</p>
+<p> Author:{{quote.author}}</p>
+<p> Submitted by:{{quote.submittedby}}</p>
+<p> (Posted {{quote.completeDate|dateCount}} days ago)</p>
 
 <div>
   <!-- <span class="span2"><i class="fa fa-thumbs-up" (click)="upVotes()"></i></span>
