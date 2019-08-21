@@ -3,6 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 ## Description
 This is an application that enables users to create quotes and have those quotes voted on whether they are terrible or are inspirational.It also has its own existing Quotes that a user can refer to.A user can also delete a quote.
+A link to my live page.
 ## Author
 Alex Muliande.
 ## Behaviour Driven Development BDD 
@@ -17,8 +18,6 @@ Alex Muliande.
 2.You can use this command (git clone *my link*) to clone the project to your machine if you have git .
 3.Run ng serve -o from your terminal to compile and open the web app.
 
-My webapp Screen shot.
-![](Nads-study-resources/Screenshotfrom2019-08-21 14-57-57.png) 
 
 ## Technologies used
 *Angular CLI
